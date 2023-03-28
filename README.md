@@ -1,2 +1,2 @@
-# veridic-task-hackerearth
+# veridic-Solutions-task-hackerearth
 Veridic news app test challenge
