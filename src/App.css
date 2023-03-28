@@ -1,0 +1,97 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.article-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+}
+
+
+.article-card img {
+  width: 100%;
+  height: auto;
+}
+
+.article-card h2 {
+  margin-top: 0;
+}
+
+.article-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #0077b5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+  .article-details {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .article-details img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .article-details h1 {
+    margin-top: 1rem;
+  }
+  
+  .article-details p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .article-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .article-card {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article-card {
+      padding: 0.5rem;
+    }
+  
+    .article-card h2 {
+      font-size: 1.2rem;
+    }
+  
+    .article-card a {
+      font-size: 1rem;
+      padding: 0.3rem 0.7rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .article-card h2 {
+      font-size: 1rem;
+    }
+  
+    .article-card a {
+      font-size: 0.9rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+  
